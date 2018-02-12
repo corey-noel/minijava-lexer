@@ -39,8 +39,8 @@ class LexerTester {
 
 	private static void printSym(Symbol sym) {
 		System.out.printf(outformat, 
-			sym.left, 
-			sym.right, 
+			sym.left + 1, 
+			sym.right + 1, 
 			SymTable.lookup[sym.sym], 
 			sym.value == null ? "" : sym.value
 		);
